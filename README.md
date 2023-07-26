@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/jhca4an8hxrbaxiy?svg=true)](https://ci.appveyor.com/project/OAOblat/homework-2-3-patterns)
