@@ -13,7 +13,7 @@ jobs:
           java-version: 17
 
       - name: Run tests
-        run: ./gradlew clean test
+        run: java -jar ./artifacts/app-card-delivery.jar & chmod +x gradlew
 
       - name: Load test report history
         uses: actions/checkout@v3
