@@ -40,5 +40,5 @@ jobs:
         if: always()
         with:
           github_token: $
-          publish_branch: main
+          publish_branch: gh-pages
           publish_dir: allure-history
