@@ -12,11 +12,14 @@ jobs:
           distribution: zulu
           java-version: 17
 
-      - name: Run tests
+      - name: Run jar
         run: java -jar ./artifacts/app-card-delivery.jar
 
       - name: Set executable permissions for gradlew
         run: chmod +x gradlew
+
+      - name: Run tests
+        run: ./gradlew clean test
 
 
       - name: Load test report history
