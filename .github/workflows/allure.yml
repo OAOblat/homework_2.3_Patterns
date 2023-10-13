@@ -12,9 +12,6 @@ jobs:
           distribution: zulu
           java-version: 11
 
-      - name: Run jar
-        run: java -jar ./artifacts/app-card-delivery.jar & chmod +x gradlew 
-
       - name: Run tests
         run: ./gradlew clean test
 
