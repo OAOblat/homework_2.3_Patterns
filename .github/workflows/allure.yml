@@ -12,12 +12,11 @@ jobs:
           distribution: zulu
           java-version: 11
 
-      - name: Change permissions for gradlew
-        run: chmod +x gradlew
-
-          
       - name: Run jar
         run: java -jar ./artifacts/app-card-delivery.jar
+
+      - name: Change permissions for gradlew
+        run: chmod +x gradlew
 
       - name: Run tests
         run: ./gradlew clean test
