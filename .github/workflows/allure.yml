@@ -13,7 +13,11 @@ jobs:
           java-version: 17
 
       - name: Run tests
-        run: java -jar ./artifacts/app-card-delivery.jar & chmod +x gradlew
+        run: java -jar ./artifacts/app-card-delivery.jar
+
+      - name: Set executable permissions for gradlew
+        run: chmod +x gradlew
+
 
       - name: Load test report history
         uses: actions/checkout@v3
