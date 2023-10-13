@@ -9,7 +9,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: 11
+          distribution: zulu
+          java-version: 17
           
       - name: Run jar
         run: java -jar ./artifacts/app-card-delivery.jar & chmod +x gradlew
